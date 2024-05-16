@@ -11,7 +11,7 @@ def create_random_pdf(file_name, num_pages=3):
     doc = SimpleDocTemplate(file_name, pagesize=letter)
     story = []
     styles = getSampleStyleSheet()
-
+    doc.title = fake.sentence()
     for _ in range(num_pages):
         story.append(Spacer(1, 12))
         story.append(Paragraph(fake.sentence(), styles['Title']))
@@ -33,4 +33,4 @@ def generate_pdfs(num_pdfs, output_dir="generated"):
         create_random_pdf(file_name)
 
 # Generate 5 PDFs
-generate_pdfs(1)
+generate_pdfs(3)

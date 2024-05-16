@@ -2,6 +2,8 @@
 
 This Python script generates random PDF files using the `reportlab` and `faker` libraries.
 
+![Sample Image](sample_image.png)
+
 ## Dependencies
 
 - `reportlab`: For generating PDF files.
